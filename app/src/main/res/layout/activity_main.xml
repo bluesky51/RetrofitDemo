@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exam.sky.retrofit.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_getRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getRequest" />
+
+    <Button
+        android:id="@+id/btn_getAndHeaderRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_getRequest"
+        android:text="getAndHeaderRequest" />
+
+    <Button
+        android:id="@+id/btn_postRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_getAndHeaderRequest"
+        android:text="测试请求地址的替换内容" />
+
+    <Button
+        android:id="@+id/btn_postAndHeaderRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_postRequest"
+        android:layout_marginTop="14dp"
+        android:text="postAndHeaderRequest" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/btn_postAndHeaderRequest">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

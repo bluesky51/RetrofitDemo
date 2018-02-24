@@ -23,7 +23,7 @@ Retrofit网络请求库的基本使用
        url地址中的内容可能要动态改变@Path替换地址的内容
        @GET(value = "json/0/{page}")
        Call<ResponseBody> getData(@Path("page") int page);
-  2.pos
+  2.post
     
     示例1:
     //请求头
